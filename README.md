@@ -2,8 +2,8 @@
 
 > Implementation of bubble sort algorithm.
 
-<p align="center" style="overflow: hidden;">
-    <img src="screenshots/another-meme.png" style="margin-bottom: -130px;">
+<p align="center">
+    <img src="screenshots/another-memaso.png">
 </p>
 
 This project was focused on the use of yield and passing a block to a method. I implemented two methods in the [BubbleSort](lib/bubble_sort.rb) module. `#bubble_sort_by` method recives a block that has two arguments representing the elements of the array that are currently being compared.
