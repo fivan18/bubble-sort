@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe BubbleSort do
   describe '#bubble_sort' do
     it 'enter not an array' do
@@ -16,16 +18,19 @@ RSpec.describe BubbleSort do
 
   describe '#bubble_sort_by' do
     it 'enter not an array' do
-      expect(bubble_sort_by({}) { |left,right| left.length - right.length }).to eql([])
+      expect(bubble_sort_by({}) { |left, right| left.length - right.length }).to eql([])
     end
+
     it 'enter an empty array' do
-      expect(bubble_sort_by([]) { |left,right| left.length - right.length }).to eql([])
+      expect(bubble_sort_by([]) { |left, right| left.length - right.length }).to eql([])
     end
+
     it 'an array with only one item' do
-      expect(bubble_sort_by([1]) { |left,right| left.length - right.length }).to eql([1])
-    end  
+      expect(bubble_sort_by([1]) { |left, right| left.length - right.length }).to eql([1])
+    end
+
     it 'bubble_sort_by' do
-      expect(bubble_sort_by(["hi", "hello", "hey"]) { |left,right| left.length - right.length }).to eql(["hi", "hey", "hello"])
+      expect(bubble_sort_by(%w[hi hello hey]) { |left, right| left.length - right.length }).to eql(%w[hi hey hello])
     end
   end
 end
