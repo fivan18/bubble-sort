@@ -28,4 +28,4 @@ Feel free to check the [issues page](https://github.com/fivan18/bubble-sort/issu
 
 ## 📝 License
 
-This project is MIT licensed.
+This project is MIT licensed. 
